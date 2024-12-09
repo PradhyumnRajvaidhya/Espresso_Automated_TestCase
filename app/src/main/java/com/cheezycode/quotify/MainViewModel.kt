@@ -25,7 +25,7 @@ class MainViewModel(val context: Context): ViewModel() {
 
     fun getQuote() = quoteList[index]
 
-    fun nextQuote() = quoteList[++index % quoteList.size()]
+    fun nextQuote() = quoteList[++index % quoteList.size]
 
-    fun previousQuote() = quoteList[(--index + quoteList.size()) % quoteList.size()]
+    fun previousQuote() = quoteList[(--index + quoteList.size) % quoteList.size]
 }
